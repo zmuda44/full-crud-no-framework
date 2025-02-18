@@ -1,10 +1,8 @@
 const router = require('express').Router();
-
-const homepageData = ["me", "my", "minesis"]
+const db = require('../../db/db.json')
 
 router.get('/', (req, res) => {
-  console.log('phat hit');
-  res.json(homepageData);
+  res.json(db);
 })
 
 module.exports = router;
