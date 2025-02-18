@@ -5,4 +5,6 @@ router.get('/', (req, res) => {
   res.json(db);
 })
 
+router.post('/')
+
 module.exports = router;
